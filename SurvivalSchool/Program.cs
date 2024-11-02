@@ -15,8 +15,7 @@ namespace SurvivalSchool
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<SurvivalSchool1Context>(
-                optionsAction: options => options.UseSqlServer(
-                    connectionString: "Server = LAPTOP-C0LJ6FJ1; Database = SurvivalSchool1; Integrated Security = True;"));
+                 options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
@@ -52,8 +51,16 @@ namespace SurvivalSchool
 
             var app = builder.Build();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+
+                var context = services.GetRequiredService<SurvivalSchool1Context>();
+                context.Database.Migrate();
+            }
+
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+          //  if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
