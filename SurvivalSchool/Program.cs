@@ -2,9 +2,12 @@ using BusinessLogic.Services;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using System.Buffers;
 using System.Reflection;
+using System.Xml.Linq;
 
 namespace SurvivalSchool
 {
@@ -38,10 +41,10 @@ namespace SurvivalSchool
 
                     Version = "v1",
                     Title = "SurvivalSchollAPI",
-                    Description = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+                    Description = "Школа выживания",
                     Contact = new OpenApiContact
                     {
-                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+                        Name = "Бекэндер",
                         Url = new Uri("https://t.me/Ares250678")
                     }
                 });
@@ -53,11 +56,21 @@ namespace SurvivalSchool
 
             using (var scope = app.Services.CreateScope())
             {
-                var services = scope.ServiceProvider;
+                var sevices = scope.ServiceProvider;
 
-                var context = services.GetRequiredService<SurvivalSchool1Context>();
+                var context = sevices.GetRequiredService<SurvivalSchool1Context>();
                 context.Database.Migrate();
+
+                context.Database.EnsureCreated();
+                context.Roles.AddRange(
+                    new Role { RoleName = "USER" },
+                    new Role { RoleName = "ADMIN" },
+                    new Role { RoleName = "SUPPORT" }
+                );
+
+                context.SaveChanges();
             }
+
 
             // Configure the HTTP request pipeline.
             //  if (app.Environment.IsDevelopment())
