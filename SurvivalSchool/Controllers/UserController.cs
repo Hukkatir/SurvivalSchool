@@ -55,7 +55,8 @@ namespace SurvivalSchool.Controllers
         ///        "Email" : "email@gmail.com",
         ///        "Pass" : "!Pa$$word123@",
         ///        "FirstName" : "Иван",
-        ///        "LastName" : "Иванов"
+        ///        "LastName" : "Иванов",
+        ///        "RoleId": 1
         ///     }
         ///
         /// </remarks>
