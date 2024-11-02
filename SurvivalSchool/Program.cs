@@ -56,25 +56,31 @@ namespace SurvivalSchool
 
             using (var scope = app.Services.CreateScope())
             {
-                var sevices = scope.ServiceProvider;
+                var services = scope.ServiceProvider;
 
-                var context = sevices.GetRequiredService<SurvivalSchool1Context>();
+                var context = services.GetRequiredService<SurvivalSchool1Context>();
                 context.Database.Migrate();
 
                 context.Database.EnsureCreated();
-                context.Roles.AddRange(
-                    new Role { RoleName = "USER" },
-                    new Role { RoleName = "ADMIN" },
-                    new Role { RoleName = "SUPPORT" }
-                );
-                context.Categories.AddRange(
-                    new Category { CategoryName = "FOREST" },
-                    new Category { CategoryName = "ISLAND" },
-                    new Category { CategoryName = "COLLEGE TSARITSINO" }
-                );
+                if (!context.Roles.Any())
+                {
+                    context.Roles.AddRange(
+                        new Role { RoleName = "USER" },
+                        new Role { RoleName = "ADMIN" },
+                        new Role { RoleName = "SUPPORT" }
+                    );
+                }
+                if (!context.Categories.Any())
+                {
+                    context.Categories.AddRange(
+                        new Category { CategoryName = "FOREST" },
+                        new Category { CategoryName = "ISLAND" },
+                        new Category { CategoryName = "COLLEGE TSARITSINO" }
+                    );
+                }
+
                 context.SaveChanges();
             }
-
 
             // Configure the HTTP request pipeline.
             //  if (app.Environment.IsDevelopment())
@@ -86,7 +92,6 @@ namespace SurvivalSchool
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
