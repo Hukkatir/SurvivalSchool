@@ -38,10 +38,10 @@ namespace SurvivalSchool
 
                     Version = "v1",
                     Title = "SurvivalSchollAPI",
-                    Description = "Школа выживания",
+                    Description = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                     Contact = new OpenApiContact
                     {
-                        Name = "Бекэндер",
+                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         Url = new Uri("https://t.me/Ares250678")
                     }
                 });
@@ -60,7 +60,7 @@ namespace SurvivalSchool
             }
 
             // Configure the HTTP request pipeline.
-          //  if (app.Environment.IsDevelopment())
+            //  if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
