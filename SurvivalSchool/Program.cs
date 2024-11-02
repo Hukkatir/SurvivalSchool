@@ -67,7 +67,11 @@ namespace SurvivalSchool
                     new Role { RoleName = "ADMIN" },
                     new Role { RoleName = "SUPPORT" }
                 );
-
+                context.Categories.AddRange(
+                    new Category { CategoryName = "FOREST" },
+                    new Category { CategoryName = "ISLAND" },
+                    new Category { CategoryName = "COLLEGE TSARITSINO" }
+                );
                 context.SaveChanges();
             }
 

@@ -179,7 +179,9 @@ namespace Domain.Models
 
                 entity.Property(e => e.TestId).HasColumnName("TestID");
 
-                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+                entity.Property(e => e.UpdatedDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
 
                 entity.HasOne(d => d.Test)
                     .WithMany(p => p.TestQuestions)
@@ -212,7 +214,9 @@ namespace Domain.Models
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
 
-                entity.Property(e => e.RoleId).HasColumnName("RoleID");
+                entity.Property(e => e.RoleId)
+                    .HasColumnName("RoleID")
+                    .HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.Username).HasMaxLength(50);
 
