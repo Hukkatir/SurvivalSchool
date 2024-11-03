@@ -19,7 +19,7 @@ namespace SurvivalSchool
 
             builder.Services.AddDbContext<SurvivalSchool1Context>(
                   options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
-            
+
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IVideoService, VideoService>();
