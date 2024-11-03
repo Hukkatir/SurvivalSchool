@@ -1,4 +1,4 @@
-using BusinessLogic.Services;
+п»їusing BusinessLogic.Services;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
@@ -41,10 +41,10 @@ namespace SurvivalSchool
 
                     Version = "v1",
                     Title = "SurvivalSchollAPI",
-                    Description = "Школа выживания",
+                    Description = "РЁРєРѕР»Р° РІС‹Р¶РёРІР°РЅРёСЏ",
                     Contact = new OpenApiContact
                     {
-                        Name = "Бекэндер",
+                        Name = "Р‘РµРєСЌРЅРґРµСЂ",
                         Url = new Uri("https://t.me/Ares250678")
                     }
                 });

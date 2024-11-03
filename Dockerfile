@@ -2,7 +2,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 
 EXPOSE 60
 ENV ASPNETCORE_URLS=http://+:60
-ENV ASPNETCORE_ENVIROMENT=Development
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
 
 WORKDIR /app
 

@@ -8,7 +8,7 @@ services:
       dockerfile: ./Dockerfile
     environment:
       - ASPNETCORE_URLS=http://+:5020
-      - ASPNETCORE_ENVIROMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionString=Server=db;Database=SurvivalSchool1;User Id=SA;Password=Password_123;MultipleActiveResultSets=true;
     ports:
       - "5020:5020"
