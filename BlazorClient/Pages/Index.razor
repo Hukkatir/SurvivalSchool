@@ -1,0 +1,47 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+<p> Тукущая дата: @CurrentDate</p>
+<p> Тукущее время: @CurrentTime</p>
+
+@foreach (var user in result)
+{
+    <p> @user.Username @user.FirstName @user.LastName </p>
+
+}
+
+@code {
+    public class User
+    {
+        public int UserId { get; set; }
+        public string Username { get; set; } = null!;
+        public string Email { get; set; } = null!;
+        public string Pass { get; set; } = null!;
+        public string FirstName { get; set; } = null!;
+        public string LastName { get; set; } = null!;
+        public DateTime RegistrationDate { get; set; }
+        public DateTime? LastLoginDate { get; set; }
+        public int RoleId { get; set; }
+    }
+
+    public User[] result = new User[] { };
+
+    string CurrentDate;
+    string CurrentTime;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var date = DateTime.Now;
+        CurrentDate = date.ToShortDateString();
+        CurrentTime = date.ToShortTimeString();
+
+        var client = new HttpClient();
+        client.BaseAddress = new Uri("https://survivalschool2-zozbor48.b4a.run/api/User");
+
+        result = await client.GetFromJsonAsync<User[]>("api/Users");
+        return;
+    }
+
+
+}

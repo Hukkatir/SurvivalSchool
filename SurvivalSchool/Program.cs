@@ -18,8 +18,8 @@ namespace SurvivalSchool
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<SurvivalSchool1Context>(
-                 options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
-
+                  options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
+            
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IVideoService, VideoService>();
@@ -88,6 +88,10 @@ namespace SurvivalSchool
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors(builder => builder.WithOrigins(new[] { "https://localhost:7207/" })
+                            .AllowAnyHeader()
+                            .AllowAnyMethod());
 
             app.UseHttpsRedirection();
 
