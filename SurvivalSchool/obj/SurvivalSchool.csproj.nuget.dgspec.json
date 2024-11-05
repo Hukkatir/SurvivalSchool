@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj": {}
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\BusinessLogic\\obj\\",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj"
               }
             }
           }
@@ -39,11 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,21 +79,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\SurvivalSchool\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\SurvivalSchool\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,15 +105,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj"
               }
             }
           }
@@ -120,11 +121,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -162,21 +158,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,7 +184,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -197,11 +196,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -239,21 +233,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
         "projectName": "SurvivalSchool",
-        "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\SurvivalSchool\\obj\\",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
+        "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -261,18 +259,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\User\\Desktop\\SurvivalSchool\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\SurvivalSchool\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -281,11 +278,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -330,7 +322,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
