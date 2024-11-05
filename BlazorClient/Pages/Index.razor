@@ -1,47 +1,44 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar ">
+    <div class="container">
+        <a class="navbar-brand" href="#">Школа выживания</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Статьи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Форум</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/users">Пользователи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/registration">Зарегистрироваться </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<p> Тукущая дата: @CurrentDate</p>
-<p> Тукущее время: @CurrentTime</p>
-
-@foreach (var user in result)
-{
-    <p> @user.Username @user.FirstName @user.LastName </p>
-
-}
-
-@code {
-    public class User
-    {
-        public int UserId { get; set; }
-        public string Username { get; set; } = null!;
-        public string Email { get; set; } = null!;
-        public string Pass { get; set; } = null!;
-        public string FirstName { get; set; } = null!;
-        public string LastName { get; set; } = null!;
-        public DateTime RegistrationDate { get; set; }
-        public DateTime? LastLoginDate { get; set; }
-        public int RoleId { get; set; }
-    }
-
-    public User[] result = new User[] { };
-
-    string CurrentDate;
-    string CurrentTime;
-
-    protected override async Task OnInitializedAsync()
-    {
-        var date = DateTime.Now;
-        CurrentDate = date.ToShortDateString();
-        CurrentTime = date.ToShortTimeString();
-
-        var client = new HttpClient();
-        client.BaseAddress = new Uri("https://survivalschool2-zozbor48.b4a.run/api/User");
-
-        result = await client.GetFromJsonAsync<User[]>("api/Users");
-        return;
-    }
-
-
-}
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Привет, Выживальщик!</h1>
+                <h6>"Школа Выживания" – это не просто сайт, это сообщество людей, стремящихся быть готовыми к любым жизненным испытаниям.  <br /> Наши обучающие материалы, видеоуроки и тесты помогут вам освоить навыки выживания от А до Я.  <br />Присоединяйтесь к нам и станьте настоящим мастером выживания!</h6>
+                <button>Готов начать обучение!</button>
+            </div>
+            <div class="col">
+                <img src="https://img.freepik.com/free-vector/working-from-anywhere-concept-illustration_114360-6772.jpg?t=st=1730799161~exp=1730802761~hmac=48bd130f0d502a269df872c9350ed5fe753409caa5492105b0d80fe62f891823&w=740" alt="..." class="img-fluid" style="max-width: 110%; margin-right: 20px;">
+            </div>
+        </div>
+    </div>
+</section>

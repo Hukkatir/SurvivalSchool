@@ -2068,11 +2068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

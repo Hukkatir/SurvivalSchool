@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using System.Buffers;
 using System.Reflection;
 using System.Xml.Linq;
+using Microsoft.AspNetCore.Cors;
 
 namespace SurvivalSchool
 {
@@ -17,9 +18,11 @@ namespace SurvivalSchool
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Настройка базы данных
             builder.Services.AddDbContext<SurvivalSchool1Context>(
                   options => options.UseSqlServer(builder.Configuration["ConnectionString"]));
 
+            // Регистрация сервисов
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IVideoService, VideoService>();
@@ -30,15 +33,15 @@ namespace SurvivalSchool
             builder.Services.AddScoped<ITestQuestionService, TestQuestionService>();
             builder.Services.AddScoped<ITestService, TestService>();
 
+            // Настройка контроллеров
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+            // Настройка Swagger
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
             {
-
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-
                     Version = "v1",
                     Title = "SurvivalSchollAPI",
                     Description = "Школа выживания",
@@ -48,52 +51,68 @@ namespace SurvivalSchool
                         Url = new Uri("https://t.me/Ares250678")
                     }
                 });
+
+                // Включение комментариев из XML-файла
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
             });
 
+            // Настройка CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin", builder =>
+                {
+                    builder.WithOrigins("http://localhost:5104") // Разрешаем запросы с localhost:5104
+                        .AllowAnyMethod() // Разрешаем любые методы (GET, POST, PUT, DELETE)
+                        .AllowAnyHeader(); // Разрешаем любые заголовки
+                });
+            });
+
             var app = builder.Build();
 
+            // Инициализация базы данных (миграция и заполнение начальными данными)
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-
-                var context = services.GetRequiredService<SurvivalSchool1Context>();
-                context.Database.Migrate();
-
-                context.Database.EnsureCreated();
-                if (!context.Roles.Any())
+                using (var context = services.GetRequiredService<SurvivalSchool1Context>())
                 {
-                    context.Roles.AddRange(
-                        new Role { RoleName = "USER" },
-                        new Role { RoleName = "ADMIN" },
-                        new Role { RoleName = "SUPPORT" }
-                    );
-                }
-                if (!context.Categories.Any())
-                {
-                    context.Categories.AddRange(
-                        new Category { CategoryName = "FOREST" },
-                        new Category { CategoryName = "ISLAND" },
-                        new Category { CategoryName = "COLLEGE TSARITSINO" }
-                    );
-                }
+                    context.Database.Migrate();
+                    context.Database.EnsureCreated();
 
-                context.SaveChanges();
+                    // Заполните базу данных роли
+                    if (!context.Roles.Any())
+                    {
+                        context.Roles.AddRange(
+                            new Role { RoleName = "USER" },
+                            new Role { RoleName = "ADMIN" },
+                            new Role { RoleName = "SUPPORT" }
+                        );
+                    }
+
+                    // Заполните базу данных категорий
+                    if (!context.Categories.Any())
+                    {
+                        context.Categories.AddRange(
+                            new Category { CategoryName = "FOREST" },
+                            new Category { CategoryName = "ISLAND" },
+                            new Category { CategoryName = "COLLEGE TSARITSINO" }
+                        );
+                    }
+
+                    context.SaveChanges();
+                }
             }
 
-            // Configure the HTTP request pipeline.
-            //  if (app.Environment.IsDevelopment())
+            // Настройка конвейера HTTP-запросов
+            if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            app.UseCors(builder => builder.WithOrigins(new[] { "https://localhost:7207/" })
-                            .AllowAnyHeader()
-                            .AllowAnyMethod());
-
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowSpecificOrigin"); // Включение политики CORS
 
             app.UseAuthorization();
 

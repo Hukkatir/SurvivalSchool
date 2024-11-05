@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aCmBHg97wnubi6ifcDNKgposHFeYflXf8EVGJ6DzeRidfy9u+B+WBnY+ABWWXexvX+q9cKn2LWp1jqbYjIavzA==",
+  "dgSpecHash": "GkeGBqDi/3bwzjJz7KS/l7C/z42T6FLpz2v2VterIIYXKIxGeTHw0nZEQQkQyMb8Q7Ngo49WeiU9Tc0mINihNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\SurvivalSchool\\SurvivalSchool.csproj",
+  "projectFilePath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dudin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dudin\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",

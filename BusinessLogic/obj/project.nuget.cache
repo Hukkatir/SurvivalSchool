@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0WfPaf8BUYhETyZqt9clf5MhLm9/R5hktE5tcz6TBBefrM5O0uFJR2xZXbNqasro2Gr3TVe85ZhSb2PVnPcHqg==",
+  "dgSpecHash": "/7QdRfwIA2iv28WxtPIsEoEjUluhsFLjeBvGWOTu1nWunPUAiiupDpWSmufV+0rc2H12dQontIqNVQdybdZXKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dudin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dudin\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",

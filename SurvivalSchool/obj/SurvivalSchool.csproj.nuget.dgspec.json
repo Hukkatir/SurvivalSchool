@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\SurvivalSchool\\SurvivalSchool.csproj": {}
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -111,8 +111,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj"
               }
             }
           }
@@ -162,14 +162,14 @@
         }
       }
     },
-    "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -237,14 +237,14 @@
         }
       }
     },
-    "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\SurvivalSchool\\SurvivalSchool.csproj": {
+    "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\SurvivalSchool\\SurvivalSchool.csproj",
+        "projectUniqueName": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
         "projectName": "SurvivalSchool",
-        "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\SurvivalSchool\\SurvivalSchool.csproj",
+        "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\SurvivalSchool.csproj",
         "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\SurvivalSchool\\obj\\",
+        "outputPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\SurvivalSchool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -265,11 +265,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\dudin\\Desktop\\SurvivalSchool-main\\SurvivalSchool-main\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\dudin\\OneDrive\\Документы\\GitHub\\SurvivalSchool\\DataAccess\\DataAccess.csproj"
               }
             }
           }
