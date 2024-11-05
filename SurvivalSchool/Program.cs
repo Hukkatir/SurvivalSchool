@@ -3,12 +3,12 @@ using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Buffers;
 using System.Reflection;
 using System.Xml.Linq;
-using Microsoft.AspNetCore.Cors;
 
 namespace SurvivalSchool
 {
